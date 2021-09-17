@@ -27,7 +27,7 @@ uci set network.lan.ipaddr="$MY_LAN_IP"
 reload_config
 
 echo Final setup steps...
-uci set wireless.default_radio0.ssid="FBWiFi Setup"
+uci set wireless.default_radio0.ssid="FBWiFi Setup Github"
 uci set wireless.default_radio0.encryption="none"
 reload_config
 
