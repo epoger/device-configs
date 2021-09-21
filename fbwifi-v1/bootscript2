@@ -26,8 +26,15 @@ echo ROUTER_IP is $ROUTER_IP, so MY_LAN_IP will be $MY_LAN_IP
 uci set network.lan.ipaddr="$MY_LAN_IP"
 reload_config
 
+set_status_ssid SettingRootPassword
+PASSWD="374clipper"
+passwd <<EOF
+${PASSWD}
+${PASSWD}
+EOF
+
 echo Final setup steps...
-uci set wireless.default_radio0.ssid="FBWiFi Setup Github"
+uci set wireless.default_radio0.ssid="FBWiFi Setup Github2"
 uci set wireless.default_radio0.encryption="none"
 reload_config
 
